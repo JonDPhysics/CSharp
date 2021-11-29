@@ -1,0 +1,13 @@
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\bin\Debug\netcoreapp3.1\AnotherCSharp.exe
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\bin\Debug\netcoreapp3.1\AnotherCSharp.deps.json
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\bin\Debug\netcoreapp3.1\AnotherCSharp.runtimeconfig.json
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\bin\Debug\netcoreapp3.1\AnotherCSharp.runtimeconfig.dev.json
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\bin\Debug\netcoreapp3.1\AnotherCSharp.dll
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\bin\Debug\netcoreapp3.1\AnotherCSharp.pdb
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.csprojAssemblyReference.cache
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.AssemblyInfoInputs.cache
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.AssemblyInfo.cs
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.csproj.CoreCompileInputs.cache
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.dll
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.pdb
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\C#\AnotherCSharp\obj\Debug\netcoreapp3.1\AnotherCSharp.genruntimeconfig.cache
