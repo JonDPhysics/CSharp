@@ -6,7 +6,7 @@ namespace DeckofCards
     {
         static void Main(string[] args)
         {
-            Deck deck = new Deck();
+            Deck Deck = new Deck();
         }
     }
 }

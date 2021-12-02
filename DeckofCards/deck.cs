@@ -37,6 +37,12 @@ namespace DeckofCards
             }
             Cards = Shuffle(Cards);
             //Console.WriteLine($"This is the {val} of {suit} with value of {value}");
+            Deal(Cards);
+        }
+        public Card Deal(List<Card> cards)
+        {
+            Card topCard = cards[0];
+            return topCard;
         }
     }
 }
