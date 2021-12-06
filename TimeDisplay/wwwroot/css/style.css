@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    margin: 150px 0px 0px 700px;
+}
+
+#timeBox{
+    border: 2px solid black;
+    padding: 5px 25px;
+    width: 120px;
+    margin-top: 15px;
+}

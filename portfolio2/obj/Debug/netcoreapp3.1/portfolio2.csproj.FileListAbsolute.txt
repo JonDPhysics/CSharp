@@ -29,6 +29,5 @@ C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfo
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfolio2\obj\Debug\netcoreapp3.1\portfolio2.genruntimeconfig.cache
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfolio2\obj\Debug\netcoreapp3.1\portfolio2.csproj.CopyComplete
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfolio2\obj\Debug\netcoreapp3.1\Razor\Views\Index\contact.cshtml.g.cs
-C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfolio2\obj\Debug\netcoreapp3.1\Razor\Views\Index\home.cshtml.g.cs
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfolio2\obj\Debug\netcoreapp3.1\Razor\Views\Index\Index.cshtml.g.cs
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\portfolio2\obj\Debug\netcoreapp3.1\Razor\Views\Index\projects.cshtml.g.cs

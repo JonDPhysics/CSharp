@@ -19,9 +19,9 @@ namespace portfolio2.Controllers
             return View();
         }
         [HttpPost("home")]
-        public ViewResult home()
+        public RedirectToActionResult home()
         {
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }

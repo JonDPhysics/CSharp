@@ -14407,11 +14407,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Index\\home.cshtml",
-      "TargetPath": "Views\\Index\\home.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Index\\Index.cshtml",
       "TargetPath": "Views\\Index\\Index.cshtml",
       "FileKind": "mvc"
