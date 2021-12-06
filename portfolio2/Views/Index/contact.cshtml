@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <a href="/"><h4>Home</h4></a>
+            <h4> | </h4>
+            <a href="projects"><h4>Projects</h4></a>
+            <h4> | </h4>
+            <h4>Contact</h4>
+        </div>
+        <h2>Contact Me!</h2>
+        <form action="home" id="box" method="post">
+            <div class="leftCol">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="rightCol">
+                <label for="message">Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <button>Send</button>
+        </form>
+    </div>
+</body>
+</html>
