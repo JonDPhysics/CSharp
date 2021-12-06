@@ -14402,23 +14402,23 @@
   "RootNamespace": "portfolio2",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Home\\home.cshtml",
-      "TargetPath": "Views\\Home\\home.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Index\\projects.cshtml",
+      "TargetPath": "Views\\Index\\projects.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Index\\home.cshtml",
+      "TargetPath": "Views\\Index\\home.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Home\\projects.cshtml",
-      "TargetPath": "Views\\Home\\projects.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Index\\Index.cshtml",
+      "TargetPath": "Views\\Index\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Home\\contact.cshtml",
-      "TargetPath": "Views\\Home\\contact.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\portfolio2\\Views\\Index\\contact.cshtml",
+      "TargetPath": "Views\\Index\\contact.cshtml",
       "FileKind": "mvc"
     }
   ],
