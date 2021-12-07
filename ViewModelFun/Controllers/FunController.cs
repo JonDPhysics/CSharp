@@ -5,17 +5,11 @@ namespace ViewModelFun.Controllers
 {
     public class FunController : Controller
     {
-        [HttpGet("")]
-        public IActionResult Names()
+        [HttpGet("users")]
+        public List<User> Users()
         {
-            string[] names = new string[]
-            {
-                "Sally",
-                "Billy",
-                "Joey",
-                "Moose"
-            };
-            return View(names);
+            List<User> users = new List<User>
+            
         }
-    }
+
 }

@@ -14402,8 +14402,28 @@
   "RootNamespace": "ViewModelFun",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\ViewModelFun\\Views\\Fun\\Message.cshtml",
+      "TargetPath": "Views\\Fun\\Message.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\ViewModelFun\\Views\\Fun\\Users.cshtml",
+      "TargetPath": "Views\\Fun\\Users.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\ViewModelFun\\Views\\Fun\\numbers.cshtml",
+      "TargetPath": "Views\\Fun\\numbers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\ViewModelFun\\Views\\Fun\\Names.cshtml",
       "TargetPath": "Views\\Fun\\Names.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\ViewModelFun\\Views\\Fun\\User.cshtml",
+      "TargetPath": "Views\\Fun\\User.cshtml",
       "FileKind": "mvc"
     }
   ],
