@@ -11,14 +11,13 @@ namespace DojoSurvey.Controllers
         }
 
         [HttpPost("result")]
-        public ViewResult Info(string name, string location, string faveLang, string comment)
+        public ViewResult Info(Survey fromForm)
         {
             // ViewBag.name = name;
             // ViewBag.location = location;
             // ViewBag.faveLang = faveLang;
             // ViewBag.comment = comment;
-            Survey result = new Survey(name,location,faveLang,comment);
-            return View(result);
+            return View(fromForm);
         }
     }
 }
