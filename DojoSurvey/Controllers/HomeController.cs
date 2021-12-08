@@ -17,7 +17,15 @@ namespace DojoSurvey.Controllers
             // ViewBag.location = location;
             // ViewBag.faveLang = faveLang;
             // ViewBag.comment = comment;
-            return View(fromForm);
+            
+            if(ModelState.IsValid)
+            {
+                return View(fromForm);
+            }
+            else
+            {
+                return View("Index");
+            }
         }
     }
 }

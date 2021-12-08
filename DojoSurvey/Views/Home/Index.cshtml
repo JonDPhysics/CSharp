@@ -1,4 +1,4 @@
-@model DojoSurvey.Models.Survey;
+@model DojoSurvey.Models.Survey
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +12,12 @@
     <div id="container">
         <form asp-action="Info">
             <div class="input">
+                <span asp-validation-for="Name"></span>
                 <label asp-for="Name"></label>
                 <input asp-for="Name">
             </div>
             <div class="input">
+                <span asp-validation-for="Location"></span>
                 <label asp-for="Location"></label>
                 <select asp-for="Location">
                     <option value="San Jose">San Jose</option>
@@ -24,6 +26,7 @@
                 </select>
             </div>
             <div class="input">
+                <span asp-validation-for="FaveLang"></span>
                 <label asp-for="FaveLang"></label>
                 <select asp-for="FaveLang">
                     <option value="C#">C#</option>
@@ -33,6 +36,7 @@
                 </select>
             </div>
             <div class="input">
+                <span asp-validation-for="Comment"></span>
                 <label asp-for="Comment"></label>
                 <textarea asp-for="Comment" cols="30" rows="10"></textarea>
             </div>

@@ -109,7 +109,7 @@ namespace WizardNinjaSamurai
         }
         public void Meditate()
         {
-            Samurai.Human.Health = 200;
+            Samurai.Health = 200;
         }
     }
 }
