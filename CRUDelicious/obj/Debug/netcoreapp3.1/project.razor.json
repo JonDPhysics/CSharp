@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\RandomPasscode.csproj",
+  "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\CRUDelicious\\CRUDelicious.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14399,16 +14399,31 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "RandomPasscode",
+  "RootNamespace": "CRUDelicious",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\Views\\Home\\Code.cshtml",
-      "TargetPath": "Views\\Home\\Code.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\CRUDelicious\\Views\\CRUD\\Index.cshtml",
+      "TargetPath": "Views\\CRUD\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\CRUDelicious\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\CRUDelicious\\Views\\CRUD\\NewDish.cshtml",
+      "TargetPath": "Views\\CRUD\\NewDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\CRUDelicious\\Views\\CRUD\\EditDish.cshtml",
+      "TargetPath": "Views\\CRUD\\EditDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\CRUDelicious\\Views\\CRUD\\OneDish.cshtml",
+      "TargetPath": "Views\\CRUD\\OneDish.cshtml",
       "FileKind": "mvc"
     }
   ],
