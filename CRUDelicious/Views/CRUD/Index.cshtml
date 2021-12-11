@@ -1,0 +1,30 @@
+@using CRUDelicious.Models;
+@model List<theDish>;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to CRUDelicious</h1>
+        <div id="navBar">
+            <h3>Check out some recent dishes!</h3>
+            <a href="new">Add a Dish</a>
+        </div>
+        <div id="box">
+            @{
+                foreach( var dish in Model)
+                {
+                    <h3><a href="@dish.DishId">@dish.Dish</a> by @dish.Chef</h3>
+                    
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>

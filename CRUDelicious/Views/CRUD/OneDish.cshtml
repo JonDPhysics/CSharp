@@ -1,0 +1,29 @@
+@model CRUDelicious.Models.theDish;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <a href="/">Home</a>
+            <div id="title">
+                <h1>@Model.Dish</h1>
+                <h3>@Model.Chef</h3>
+            </div>
+        </div>
+        <h4>@Model.Description</h4>
+        <h4>@Model.Calories</h4>
+        <h4>@Model.Tastiness</h4>
+        <div class="btns">
+            <form asp-action="DeleteDish"><input type="submit" value="Delete"></form>
+            <button><a href="edit/@Model.DishId">Edit</a></button>
+        </div>
+    </div>
+</body>
+</html>

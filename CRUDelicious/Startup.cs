@@ -7,17 +7,30 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+// This is for our new Configuration property
+using Microsoft.Extensions.Configuration;
+// These are for our db connector
+using CRUDelicious.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace DojoSurvey
+namespace CRUDelicious
 {
     public class Startup
     {
+        // Create a new constructor that accepts an IConfiguration object
+        public Startup (IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+        // Add a public property for our newly accepted IConfiguration
+        public IConfiguration Configuration {get;}
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddDbContext<DishContext>(options => options.UseMySql (Configuration["DBInfo:ConnectionString"]));
             services.AddSession();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,7 +40,7 @@ namespace DojoSurvey
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseSession();
+            app.UseSession(); // telling our application to actually USE session (MUST BE BEFORE app.UseMvc)
             app.UseStaticFiles();
             app.UseMvc();
         }
