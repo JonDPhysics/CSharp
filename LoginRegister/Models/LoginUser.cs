@@ -1,6 +1,5 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LoginRegister.Models
 {
@@ -8,9 +7,11 @@ namespace LoginRegister.Models
     {
         [Display(Name = "Email")]
         [Required(ErrorMessage = "Please provide your email address.")]
+        [DataType(DataType.EmailAddress)]
         public string email {get; set;}
         [Display(Name = "Password")]
         [Required(ErrorMessage = "Please provide your password.")]
+        [DataType(DataType.Password)]
         public string pw {get; set;}
     }
 }

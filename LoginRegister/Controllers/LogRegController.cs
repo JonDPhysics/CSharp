@@ -28,8 +28,12 @@ namespace LoginRegister.Controllers
             return View();
         }
         [HttpGet("success")]
-        public ViewResult Dashboard()
+        public IActionResult Dashboard()
         {
+            if (HttpContext.Session.GetString("id") == null)
+            {
+                return RedirectToAction("Register");
+            }
             return View();
         }
         [HttpPost("register")]
@@ -52,29 +56,36 @@ namespace LoginRegister.Controllers
             }
             return RedirectToAction("Register");
         }
-        [HttpPost("me/{userId}")]
-        public IActionResult PassFailLog(LoginUser user, int id)
+        [HttpPost("me")]
+        public IActionResult PassFailLog(LoginUser user)
         {
             if (ModelState.IsValid)
             {
-                var userInDb = DbContext.Users.FirstOrDefault(u => u.email == user.email);
+                User userInDb = DbContext.Users.FirstOrDefault(u => u.email == user.email);
 
                 if(userInDb == null)
                 {
                     ModelState.AddModelError("email", "Invalid Email/Password");
                     return View("Login");
                 }
-                return RedirectToAction("Dashboard", id);
 
-                var hasher = new PasswordHasher<LoginUser>();
+                PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
                 var result = hasher.VerifyHashedPassword(user, userInDb.pw, user.pw);
-                if(result == 0)
+                if(result == PasswordVerificationResult.Failed)
                 {
                     ModelState.AddModelError("pw", "Incorrect Password.");
                     return View("Login");
                 }
+
+                HttpContext.Session.SetInt32("id", userInDb.id);
                 return RedirectToAction("Dashboard");
             }
+            return RedirectToAction("Login");
+        }
+        [HttpGet("logout")]
+        public RedirectToActionResult Clear()
+        {
+            HttpContext.Session.Clear();
             return RedirectToAction("Login");
         }
     }

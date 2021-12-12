@@ -14,19 +14,21 @@
             <h1>Login to this Cool Site!</h1>
             <a href="/">Register</a>
         </div>
-        <div class="col">
+        <form asp-action="PassFailLog">
+            <div class="col">
             <div class="row">
-                <span asp-for="email"></span>
+                <span asp-validation-for="email"></span>
                 <label asp-for="email"></label>
                 <input asp-for="email">
             </div>
             <div class="row">
-                <span asp-for="pw"></span>
+                <span asp-validation-for="pw"></span>
                 <label asp-for="pw"></label>
                 <input asp-for="pw">
             </div>
-            <input type="submit" value="Sign up Now">
+            <input type="submit" value="Login">
         </div>
+        </form>
     </div>
 </body>
 </html>
