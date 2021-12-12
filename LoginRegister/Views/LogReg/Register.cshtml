@@ -1,0 +1,51 @@
+@model LoginRegister.Models.User;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <h1>Register to this Cool Site!</h1>
+            <a href="login">Login</a>
+        </div>
+        <form asp-action="PassFailReg">
+            <div class="col">
+                <div class="row">
+                    <span asp-validation-for="fname"></span>
+                    <label asp-for="fname"></label>
+                    <input asp-for="fname">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="lname"></span>
+                    <label asp-for="lname"></label>
+                    <input asp-for="lname">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="email"></span>
+                    <label asp-for="email"></label>
+                    <input asp-for="email">
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <span asp-validation-for="pw"></span>
+                <label asp-for="pw"></label>
+                <input asp-for="pw">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="cpw"></span>
+                    <label asp-for="cpw"></label>
+                    <input asp-for="cpw">
+                </div>
+            </div>
+            <input type="submit" value="Sign up Now">
+        </form>
+    </div>
+</body>
+</html>
