@@ -1,0 +1,40 @@
+@model 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <h1><a href="/">Chefs</a></h1>
+            <h1> | </h1>
+            <h1>Dishes</h1>
+            <a href="new">Add a Dish</a>
+        </div>
+        <h3>Yum, take a look at our tast dishes!</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Chef</th>
+                    <th>Tastiness</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.dname</td>
+                    <td>@Model.chefId.cname</td>
+                    <td>@Model.taste</td>
+                    <td>@Model.cal</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

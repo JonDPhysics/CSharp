@@ -1,0 +1,59 @@
+@using ChefsDishes.Models
+@model Dish;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Add a Dish!</h1>
+        <div id="navBar">
+            <a href="dishes">Home</a>
+        </div>
+        <form asp-action="AddDish">
+            <div class="col">
+                <div class="row">
+                    <span asp-validation-for="name"></span>
+                    <label asp-for="name"></label>
+                    <input asp-for="name">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="cal"></span>
+                    <label asp-for="cal"></label>
+                    <input asp-for="cal">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="describe"></span>
+                    <label asp-for="describe"></label>
+                    <input asp-for="describe">
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <span asp-validation-for="chefId"></span>
+                    <label asp-for="chefId"></label>
+                    <select asp-for="chefId">
+                        @foreach (chef in )
+                        {
+                            
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <span asp-validation-for="taste"></span>
+                    <label asp-for="taste"></label>
+                    <input asp-for="taste">
+                </div>
+            </div>
+            <input type="submit" value="Add Dish">
+        </form>
+    </div>
+</body>
+</html>
