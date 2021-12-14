@@ -36,10 +36,10 @@ namespace SportsORM.Controllers
             ViewBag.NotFootballLeagues = _context.Leagues.Where(l => l.Name.Contains("Football")).ToList();
             ViewBag.Conferences = _context.Leagues.Where(l => l.Name.Contains("Conference")).ToList();
             ViewBag.AtlanticLeagues = _context.Leagues.Where(l => l.Name.Contains("Atlantic")).ToList();
-            ViewBag.DallasTeams = _context.Teams.Where(t => t.Name.Contains("Dallas")).ToList();
-            ViewBag.Raptors = _context.Teams.Where(t => t.Name.Contains("Raptors")).ToList();
-            ViewBag.CityLocation = _context.Teams.Where(t => t.Name.Contains("City")).ToList();
-            ViewBag.StartWithT = _context.Teams.Where(t => t.Name.Contains("T")).ToList();
+            ViewBag.DallasTeams = _context.Teams.Where(t => t.TeamName.Contains("Dallas")).ToList();
+            ViewBag.Raptors = _context.Teams.Where(t => t.TeamName.Contains("Raptors")).ToList();
+            ViewBag.CityLocation = _context.Teams.Where(t => t.TeamName.Contains("City")).ToList();
+            ViewBag.StartWithT = _context.Teams.Where(t => t.TeamName.Contains("T")).ToList();
             ViewBag.AllTeamsLocation = _context.Teams.OrderBy(t => t.Location).ToList();
             ViewBag.AllTeamsName = _context.Teams.OrderByDescending(t => t.TeamName).ToList();
             ViewBag.LNameCooper = _context.Players.Where(p => p.LastName.Contains("Cooper")).ToList();

@@ -36,20 +36,20 @@
             <li>Raptors</li>
             @foreach (var t in ViewBag.Raptors)
             {
-                <ul>@t.Name</ul>
+                <ul>@t.TeamName</ul>
             }
             <li>...all teams whose location includes "City"</li>
-            @foreach (var l in ViewBag.CityLocation)
+            @foreach (var t in ViewBag.CityLocation)
             {
-                <ul>@t.Name</ul>
+                <ul>@t.TeamName</ul>
             }
             <li>...all teams whose names begin with "T"</li>
-            @foreach (var t in VeiwBag.StartWithT)
+            @foreach (var t in ViewBag.StartWithT)
             {
-                <ul>@t.Name</ul>
+                <ul>@t.TeamName</ul>
             }
             <li>...all teams, ordered alphabetically by location</li>
-            @foreach (var t in viewBag.AllTeamsLocation)
+            @foreach (var t in ViewBag.AllTeamsLocation)
             {
                 <ul>@t.TeamName</ul>
             }
