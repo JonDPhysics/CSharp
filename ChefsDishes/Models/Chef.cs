@@ -25,6 +25,7 @@ namespace ChefsDishes.Models
         public DateTime dob {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} =DateTime.Now;
+        [NotMapped]
         public List<Dish> CreatedDish {get; set;}
     }
 }

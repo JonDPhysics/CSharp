@@ -1,4 +1,5 @@
-@model 
+@using ChefsDishes.Models;
+@model IndexView;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +28,12 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>@Model.fname @Model.lname</td>
-                    <td>@Model.dob</td>
-                    <td>@Model.CreatedDish.Count</td>
+                    @foreach(Dish dish in Model.AllDishes)
+                    {
+                        <td>@dish.Creator.fname @dish.Creator.lname</td>
+                        <td>@dish.Creator.dob</td>
+                        <td>@dish.Creator.CreatedDish.Count</td>
+                    }
                 </tr>
             </tbody>
         </table>

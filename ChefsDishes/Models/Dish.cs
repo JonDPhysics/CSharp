@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace ChefsDishes.Models
 {
@@ -27,9 +28,17 @@ namespace ChefsDishes.Models
         [Required]
         public string taste {get; set;}
 
+        
+        [Display(Name = "Chef")]
+        [Required(ErrorMessage = "Please add a Chef.")]
         public int chefId {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
+
+        [Display(Name = "Chef")]
+        [Required]
         public Chef Creator {get; set;}
+        [NotMapped]
+        public List<Chef> Creators {get; set;}
     }
 }
