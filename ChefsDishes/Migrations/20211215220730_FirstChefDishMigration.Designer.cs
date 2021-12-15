@@ -3,14 +3,16 @@ using System;
 using ChefsDishes.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ChefsDishes.Migrations
 {
     [DbContext(typeof(TheContext))]
-    partial class TheContextModelSnapshot : ModelSnapshot
+    [Migration("20211215220730_FirstChefDishMigration")]
+    partial class FirstChefDishMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

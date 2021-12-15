@@ -8,7 +8,7 @@ namespace ChefsDishes.Models
     public class Chef
     {
         [Key]
-        public int id {get; set;}
+        public int ChefId {get; set;}
 
         [Display(Name = "First Name")]
         [Required(ErrorMessage = "Please provide the Chef's first name.")]
@@ -25,7 +25,6 @@ namespace ChefsDishes.Models
         public DateTime dob {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} =DateTime.Now;
-        [NotMapped]
         public List<Dish> CreatedDish {get; set;}
     }
 }

@@ -8,7 +8,7 @@ namespace ChefsDishes.Models
     public class Dish
     {
         [Key]
-        public int id {get; set;}
+        public int DishId {get; set;}
 
         [Display(Name = "Name of Dish")]
         [Required(ErrorMessage = "Please provide a name for the dish.")]
@@ -18,7 +18,7 @@ namespace ChefsDishes.Models
         [Display(Name = "Calories")]
         [Required]
         [Range(0, 3000, ErrorMessage = "Calories cannot be less than 0.")]
-        public int? cal {get; set;}
+        public int cal {get; set;}
 
         [Display(Name = "Description")]
         [Required(ErrorMessage = "Please provide a description for the dish.")]
@@ -35,8 +35,6 @@ namespace ChefsDishes.Models
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
-        [Display(Name = "Chef")]
-        [Required]
         public Chef Creator {get; set;}
         [NotMapped]
         public List<Chef> Creators {get; set;}

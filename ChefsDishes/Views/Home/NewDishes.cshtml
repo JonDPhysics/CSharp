@@ -40,7 +40,7 @@
                     <select asp-for="chefId">
                         @foreach (Chef chef in Model.Creators)
                             {
-                                <options value="@chef.id">@chef.fname @chef.lname</options>
+                                <option value="@chef.ChefId">@chef.fname @chef.lname</option>
                             }
                     </select>
                 </div>

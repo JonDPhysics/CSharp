@@ -25,9 +25,9 @@ namespace ChefsDishes.Controllers
                 .Include(dish => dish.Creator)
                 .ToList(),
                 
-                // AllChefs = _context.Chefs
-                // .Include(chef => chef.CreatedDish)
-                // .ToList()
+                AllChefs = _context.Chefs
+                .Include(chef => chef.CreatedDish)
+                .ToList()
             };
             return View(chefWithDishes);
         }
@@ -53,9 +53,12 @@ namespace ChefsDishes.Controllers
         [HttpGet("dishes")]
         public ViewResult Dishes()
         {
-            List<Dish> dishesWithChef = _context.Dishes
-            .Include(dish => dish.Creator)
-            .ToList();
+            IndexView dishesWithChef = new IndexView()
+            {
+                AllDishes = _context.Dishes
+                .Include(dish => dish.Creator)
+                .ToList()
+            };
             return View(dishesWithChef);
         }
 

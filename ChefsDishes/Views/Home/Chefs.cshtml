@@ -28,11 +28,11 @@
             </thead>
             <tbody>
                 <tr>
-                    @foreach(Dish dish in Model.AllDishes)
+                    @foreach(Chef chef in Model.AllChefs)
                     {
-                        <td>@dish.Creator.fname @dish.Creator.lname</td>
-                        <td>@dish.Creator.dob</td>
-                        <td>@dish.Creator.CreatedDish.Count</td>
+                        <td>@chef.fname @chef.lname</td>
+                        <td>@chef.dob</td>
+                        <td>@chef.CreatedDish.Count</td>
                     }
                 </tr>
             </tbody>

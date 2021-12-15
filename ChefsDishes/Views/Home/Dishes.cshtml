@@ -1,5 +1,5 @@
 @using ChefsDishes.Models;
-@model List<Dish>;
+@model IndexView;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@
             <tbody>
                 <tr>
                     @{
-                        foreach(Dish dish in Model)
+                        foreach(Dish dish in Model.AllDishes)
                         {
                             <td>@dish.name</td>
                             <td>@dish.Creator.fname @dish.Creator.lname</td>
