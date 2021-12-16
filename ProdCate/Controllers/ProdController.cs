@@ -11,6 +11,11 @@ namespace ProdCate.Controllers
 {
     public class ProdController : Controller
     {
+        private TheContext _context;
+        public ProdController(TheContext context)
+        {
+            _context = context;
+        }
         [HttpGet("products")]
         public IActionResult NewProd()
         {
@@ -18,7 +23,7 @@ namespace ProdCate.Controllers
         }
 
         [HttpPost("itsaproduct")]
-        public RedirectToActionResult AddProd()
+        public RedirectToActionResult CreateProd()
         {
             return RedirectToAction("NewProd");
         }
@@ -36,7 +41,7 @@ namespace ProdCate.Controllers
         }
 
         [HttpPost("itsacategory")]
-        public RedirectToActionResult AddCate()
+        public RedirectToActionResult CreateCate()
         {
             return RedirectToAction("NewCate");
         }
@@ -45,6 +50,12 @@ namespace ProdCate.Controllers
         public IActionResult Cate()
         {
             return View();
+        }
+
+        [HttpPost("addacategory")]
+        public RedirectToActionResult AddCate()
+        {
+            return RedirectToAction("Cate");
         }
     }
 }

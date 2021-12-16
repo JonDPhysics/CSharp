@@ -9,8 +9,11 @@ namespace ProdCate.Models
     {
         [Key]
         public int Cateid {get; set;}
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "Please provide a category name.")]
         public string CateName {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
+        public List<Asso> Assignments {get; set;}
     }
 }

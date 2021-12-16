@@ -1,0 +1,43 @@
+@using ProdCate.Models;
+@model Prod;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Products</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <h1>Products</h1>
+            <h1> | </h1>
+            <h1><a href="categories">Categories</a></h1>
+        </div>
+        <h2>New Product</h2>
+        <div class="col">
+            <form asp-action="CreateProd">
+                <div class="row">
+                    <span asp-validation-for="ProdName"></span>
+                    <label asp-for="ProdName"></label>
+                    <input asp-for="ProdName">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="ProdPrice"></span>
+                    <label asp-for="ProdPrice"></label>
+                    <input asp-for="ProdPrice">
+                </div>
+                <div class="row">
+                    <span asp-validation-for="ProdDescribe"></span>
+                    <label asp-for="ProdDescribe"></label>
+                    <input asp-for="ProdDescribe">
+                </div>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</body>
+</html>
