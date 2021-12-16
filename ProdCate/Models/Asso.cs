@@ -11,7 +11,7 @@ namespace ProdCate.Models
         public int AssoId {get; set;}
         public int ProdId {get; set;}
         public Prod ProdWithCate {get; set;}
-        public int CateId {get; set;}
+        public int Cateid {get; set;}
         public Cate CateWithProd {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;

@@ -27,8 +27,8 @@
         <div class="col">
             <h2>Add Category:</h2>
             <form asp-action="CateToProd">
-                <label asp-for="@AddCate.CateId"></label>
-                <select asp-for="@AddCate.CateId">
+                <label asp-for="@AddCate.Cateid"></label>
+                <select asp-for="@AddCate.Cateid">
                     @foreach (Cate cat in CateToAdd)
                     {
                         <option value="@cat.Cateid">@cat.CateName</option>

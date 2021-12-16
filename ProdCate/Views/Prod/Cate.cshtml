@@ -11,15 +11,15 @@
 </head>
 <body>
     @{
-        Cate Display = Model.ToRender;
+        @* Cate Display = Model.ToRender; *@
         Asso AddProd = Model.AddProd;
         List<Prod> ProdToAdd = Model.ToAdd;
     }
     <div id="container">
-        <h1>@Display.CateName</h1>
+        <h1>@Model.ToRender.CateName</h1>
         <div class="col">
             <h2>Products:</h2>
-            @foreach (Asso ass in Display.AssignedProd)
+            @foreach (Asso ass in Model.ToRender.AssignedProd)
             {
                 <h3>@ass.ProdWithCate.ProdName</h3>
             }
@@ -27,14 +27,14 @@
         <div class="col">
             <h2>Add Product:</h2>
             <form asp-action="ProdToCate">
-                <label for="@AddProd.ProdId"></label>
+                <label asp-for="@AddProd.ProdId"></label>
                 <select asp-for="@AddProd.ProdId">
                     @foreach (Prod pro in ProdToAdd)
                     {
-                        <option value="@pro.ProdId">@pro.ProdId</option>
+                        <option value="@pro.ProdId">@pro.ProdName</option>
                     }
                 </select>
-                <input type="hidden" asp-for="@AddProd.Cateid" value="@Display.Cateid">
+                <input type="hidden" asp-for="@AddProd.Cateid" value="@Model.ToRender.Cateid">
                 <input type="submit" value="Add">
             </form>
         </div>

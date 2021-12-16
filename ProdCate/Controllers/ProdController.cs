@@ -95,14 +95,27 @@ namespace ProdCate.Controllers
             return RedirectToAction("NewCate");
         }
 
-        [HttpGet("categories/{Cateid}")]
-        public IActionResult Cate(int )
+        [HttpGet("categories/{cateid}")]
+        public IActionResult Cate(int cateid)
         {
-            return View();
+            CateInfoView toHaveNotToHave = new CateInfoView()
+            {
+                ToRender = _context.Cates
+                    .Include(cat => cat.AssignedProd)
+                        .ThenInclude(pro => pro.ProdWithCate)
+                    .FirstOrDefault(cat => cat.Cateid == cateid),
+
+                ToAdd = _context.Prods
+                    .Include(pro => pro.AssignedCate)
+                    .Where(pro => !pro.AssignedCate.Any(cat => cat.Cateid == cateid))
+                    .ToList()
+            };
+
+            return View(toHaveNotToHave);
         }
 
-        [HttpPost("prod/{id}/add")]
-        public RedirectToActionResult ProdToCate(int id, CateInfoView viewModel)
+        [HttpPost("prod/{cateid}/add")]
+        public IActionResult ProdToCate(int cateid, CateInfoView viewModel)
         {
             if (ModelState.IsValid)
             {
@@ -110,11 +123,11 @@ namespace ProdCate.Controllers
                 _context.Add(fromForm);
                 _context.SaveChanges();
 
-                return RedirectToAction("Cate", new {Cateid = id});
+                return RedirectToAction("Cate", new {Cateid = cateid});
             }
             else
             {
-                return Cate(id);
+                return Cate(cateid);
             }
         }
     }
