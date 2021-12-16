@@ -20,7 +20,9 @@ namespace ProdCate.Models
         public float ProdPrice {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
-        public List<Asso> Assigner {get; set;}
+        public List<Asso> AssignedCate {get; set;}
         public List<Cate> AllCats {get; set;}
+        [NotMapped]
+        public List<Prod> listOfProds {get; set;}
     }
 }

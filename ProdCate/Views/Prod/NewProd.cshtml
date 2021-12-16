@@ -37,7 +37,13 @@
                 <input type="submit" value="Create">
             </form>
         </div>
-        <div class="col"></div>
+        <div class="col">
+            <h2>Existing Products</h2>
+            @foreach (Prod prod in Model.listOfProds)
+            {
+                <h3><a href="products/@prod.ProdId">@prod.ProdName</a></h3>
+            }
+        </div>
     </div>
 </body>
 </html>

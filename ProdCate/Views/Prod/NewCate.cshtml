@@ -27,7 +27,13 @@
                 <input type="submit" value="Create">
             </form>
         </div>
-        <div class="col"></div>
+        <div class="col">
+            <h2>Existing Categories</h2>
+            @foreach (Cate cat in Model.listOfCates)
+            {
+                <h3><a href="categories/@cat.Cateid">@cat.CateName</a></h3>
+            }
+        </div>
     </div>
 </body>
 </html>

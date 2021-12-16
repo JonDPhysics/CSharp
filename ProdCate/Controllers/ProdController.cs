@@ -19,43 +19,103 @@ namespace ProdCate.Controllers
         [HttpGet("products")]
         public IActionResult NewProd()
         {
-            return View();
+            Prod theProds = new Prod()
+            {
+                listOfProds = _context.Prods.ToList()
+            };
+            return View(theProds);
         }
 
         [HttpPost("itsaproduct")]
-        public RedirectToActionResult CreateProd()
+        public RedirectToActionResult CreateProd(Prod aProd)
         {
+            if(ModelState.IsValid)
+            {
+                _context.Add(aProd);
+                _context.SaveChanges();
+                return RedirectToAction("NewProd");
+            }
             return RedirectToAction("NewProd");
         }
 
         [HttpGet("products/{id}")]
-        public IActionResult Prod()
+        public IActionResult Prod(int id)
         {
-            return View();
+            ProdInfoView toHaveNotToHave = new ProdInfoView()
+            {
+                ToRender = _context.Prods
+                    .Include(pro => pro.AssignedCate)
+                        .ThenInclude(cat => cat.CateWithProd)
+                    .FirstOrDefault(pro => pro.ProdId == id),
+
+                ToAdd = _context.Cates
+                    .Include(cat => cat.AssignedProd)
+                    .Where(cat => !cat.AssignedProd.Any(pro => pro.ProdId == id))
+                    .ToList()
+            };
+
+            return View(toHaveNotToHave);
+        }
+        [HttpPost("cate/{id}/add")]
+        public IActionResult CateToProd(int id, ProdInfoView viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                Asso fromForm = viewModel.AddCate;
+                _context.Add(fromForm);
+                _context.SaveChanges();
+
+                return RedirectToAction("Prod", new {ProdId = id});
+            }
+            else
+            {
+                return Prod(id);
+            }
         }
 
         [HttpGet("categories")]
         public IActionResult NewCate()
         {
-            return View();
+            Cate theCate = new Cate()
+            {
+                listOfCates = _context.Cates.ToList()
+            };
+            return View(theCate);
         }
 
         [HttpPost("itsacategory")]
-        public RedirectToActionResult CreateCate()
+        public RedirectToActionResult CreateCate(Cate aCate)
         {
+            if(ModelState.IsValid)
+            {
+                _context.Add(aCate);
+                _context.SaveChanges();
+                return RedirectToAction("NewCate");
+            }
             return RedirectToAction("NewCate");
         }
 
-        [HttpGet("")]
-        public IActionResult Cate()
+        [HttpGet("categories/{Cateid}")]
+        public IActionResult Cate(int )
         {
             return View();
         }
 
-        [HttpPost("addacategory")]
-        public RedirectToActionResult AddCate()
+        [HttpPost("prod/{id}/add")]
+        public RedirectToActionResult ProdToCate(int id, CateInfoView viewModel)
         {
-            return RedirectToAction("Cate");
+            if (ModelState.IsValid)
+            {
+                Asso fromForm = viewModel.AddProd;
+                _context.Add(fromForm);
+                _context.SaveChanges();
+
+                return RedirectToAction("Cate", new {Cateid = id});
+            }
+            else
+            {
+                return Cate(id);
+            }
         }
     }
 }

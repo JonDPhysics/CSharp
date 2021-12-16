@@ -14,6 +14,8 @@ namespace ProdCate.Models
         public string CateName {get; set;}
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
-        public List<Asso> Assignments {get; set;}
+        public List<Asso> AssignedProd {get; set;}
+        [NotMapped]
+        public List<Cate> listOfCates {get; set;}
     }
 }

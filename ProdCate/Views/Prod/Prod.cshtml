@@ -1,5 +1,5 @@
 @using ProdCate.Models;
-@model Prod;
+@model ProdInfoView;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +11,31 @@
 </head>
 <body>
     <div id="container">
-        <h1>@Model.ProdName</h1>
+        @{
+            Prod Display = Model.ToRender;
+            Asso AddCate = Model.AddCate;
+            List<Cate> CateToAdd = Model.ToAdd;
+        }
+        <h1>@Display.ProdName</h1>
         <div class="col">
             <h2>Categories:</h2>
-        @foreach (Cate cate in Model.AllCats)
-        {
-            <h3>@cate.CateName</h3>
-        }
+            @foreach (Asso ass in Display.AssignedCate)
+            {
+                <h3>@ass.CateWithProd.CateName</h3>
+            }
         </div>
         <div class="col">
-            <form asp-action="AddCate">
+            <h2>Add Category:</h2>
+            <form asp-action="CateToProd">
+                <label asp-for="@AddCate.CateId"></label>
+                <select asp-for="@AddCate.CateId">
+                    @foreach (Cate cat in CateToAdd)
+                    {
+                        <option value="@cat.Cateid">@cat.CateName</option>
+                    }
+                </select>
+                <input type="hidden" asp-for="@AddCate.ProdId" value="@Display.ProdId">
+                <input type="submit" value="Add">
             </form>
         </div>
     </div>
