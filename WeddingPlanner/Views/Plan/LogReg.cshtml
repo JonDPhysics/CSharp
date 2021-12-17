@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div id="container">
+        <div class="col">
+            <h2>Register</h2>
+            <form asp-action="Dashboard">
+                <div class="row">
+                    <label asp-for="fname"></label>
+                    <input asp-for="fname">
+                </div>
+                <div class="row">
+                    <label asp-for="lname"></label>
+                    <input asp-for="lname">
+                </div>
+                <div class="row">
+                    <label asp-for="email"></label>
+                    <input asp-for="email">
+                </div>
+                <div class="row">
+                    <label asp-for="pw"></label>
+                    <input asp-for="pw">
+                </div>
+                <div class="row">
+                    <label asp-for="cpw"></label>
+                    <input asp-for="cpw">
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div class="col">
+            <h2>Login</h2>
+            <form asp-action="Dashboard">
+                <div class="row">
+                    <label asp-for="email"></label>
+                    <input asp-for="email">
+                </div>
+                <div class="row">
+                    <label asp-for="pw"></label>
+                    <input asp-for="pw">
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
