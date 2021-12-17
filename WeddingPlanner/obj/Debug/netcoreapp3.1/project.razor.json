@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\RandomPasscode.csproj",
+  "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\WeddingPlanner\\WeddingPlanner.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14399,15 +14399,30 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "RandomPasscode",
+  "RootNamespace": "WeddingPlanner",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\Views\\Pass\\Code.cshtml",
-      "TargetPath": "Views\\Pass\\Code.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\WeddingPlanner\\Views\\Plan\\WhatPlan.cshtml",
+      "TargetPath": "Views\\Plan\\WhatPlan.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\WeddingPlanner\\Views\\Plan\\OurPlan.cshtml",
+      "TargetPath": "Views\\Plan\\OurPlan.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\WeddingPlanner\\Views\\Plan\\Dashboard.cshtml",
+      "TargetPath": "Views\\Plan\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\WeddingPlanner\\Views\\Plan\\LogReg.cshtml",
+      "TargetPath": "Views\\Plan\\LogReg.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\WeddingPlanner\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\RandomPasscode.csproj",
+  "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\notBeltExam\\notBeltExam.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14399,15 +14399,10 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "RandomPasscode",
+  "RootNamespace": "notBeltExam",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\Views\\Pass\\Code.cshtml",
-      "TargetPath": "Views\\Pass\\Code.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\RandomPasscode\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\CodingDojoAssigments\\CSharp\\notBeltExam\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
