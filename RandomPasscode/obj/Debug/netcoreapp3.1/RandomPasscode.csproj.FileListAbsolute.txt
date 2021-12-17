@@ -29,4 +29,4 @@ C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\Random
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\RandomPasscode\obj\Debug\netcoreapp3.1\RandomPasscode.pdb
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\RandomPasscode\obj\Debug\netcoreapp3.1\RandomPasscode.genruntimeconfig.cache
 C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\RandomPasscode\obj\Debug\netcoreapp3.1\RandomPasscode.csproj.CopyComplete
-C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\RandomPasscode\obj\Debug\netcoreapp3.1\Razor\Views\Home\Code.cshtml.g.cs
+C:\Users\jonat\OneDrive\Documents\Coding Dojo\CodingDojoAssigments\CSharp\RandomPasscode\obj\Debug\netcoreapp3.1\Razor\Views\Pass\Code.cshtml.g.cs

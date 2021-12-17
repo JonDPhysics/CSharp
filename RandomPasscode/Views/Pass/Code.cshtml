@@ -1,4 +1,3 @@
-@model PassCode.Models.Generator
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +9,9 @@
 </head>
 <body>
     <div id="container">
-        <h1></h1>
-        <textarea cols="2" rows="10">@Model.generatePasscode(code)</textarea>
+        <h1>Random Passcode</h1>
+        <h2>Number of Passcodes: @ViewBag.Count</h2>
+        <textarea cols="2" rows="10">@ViewBag.Code</textarea>
     </div>
 </body>
 </html>
