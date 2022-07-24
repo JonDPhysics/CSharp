@@ -16,7 +16,7 @@ namespace Human
             return health;
         }
     }
-     
+    
     // Add a constructor that takes a value to set Name, and set the remaining fields to default values
     public string humanName(string name)
     {
