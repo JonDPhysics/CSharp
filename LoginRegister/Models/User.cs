@@ -19,7 +19,6 @@ namespace LoginRegister.Models
         [Display(Name = "Email")]
         [Required(ErrorMessage = "Please provide your email.")]
         [DataType(DataType.EmailAddress)]
-        
         public string email {get; set;}
         [Display(Name = "Password")]
         [Required(ErrorMessage = "Please provide a password.")]
