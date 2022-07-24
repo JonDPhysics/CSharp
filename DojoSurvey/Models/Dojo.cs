@@ -7,12 +7,12 @@ namespace DojoSurvey.Models
         [Required(ErrorMessage ="Please provide your name.")]
         [MinLength(2, ErrorMessage = "Name must be atleast 2 characters.")]
         public string Name {get; set;}
-        [Required]
 
+        [Required]
         [Display(Name = "Dojo Location: ")]
         public string Location {get; set;}
-        [Required]
 
+        [Required]
         [Display(Name = "Favorite Language: ")]
         public string FaveLang {get; set;}
 
